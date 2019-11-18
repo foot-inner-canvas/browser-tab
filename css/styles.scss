@@ -1,0 +1,374 @@
+$color1: hsl(207, 56%, 94%);
+$color2: hsl(21, 100%, 81%);
+$color3: hsl(50, 100%, 86%);
+$color4: hsl(207, 73%, 69%);
+$color5: hsl(127, 82%, 82%);
+$color6: hsl(350, 81%, 92%);
+
+html,
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+		"Helvetica Neue", sans-serif;
+	cursor: default;
+	font-size: 16pt;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+}
+
+main {
+	padding: 0;
+	margin: 0;
+	margin-top: 92px;
+}
+
+footer {
+	margin: 0;
+	padding: 16px 72px;
+}
+
+nav {
+	padding: 12px 0;
+}
+
+p,
+label {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	li {
+		display: inline-block;
+		padding: 12px 21px;
+		margin: 0;
+	}
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+button {
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	border: none;
+	background-clip: padding-box;
+	cursor: pointer;
+	display: block;
+	min-width: 215px;
+	padding: 12px;
+	font-size: 11pt;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 12px 0;
+	border-radius: 4px;
+}
+
+code {
+	display: block;
+	border-top: 2px solid #2d2d2d;
+	width: 90%;
+	font-size: 9pt;
+	padding: 6px 0;
+	margin: 0 auto;
+	overflow-x: scroll;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: 600;
+}
+
+.primary {
+	background-color: $color4;
+
+	&:hover,
+	&:focus {
+		background-color: #636363;
+		color: white;
+		-webkit-box-shadow: 0 0 12px 0 hsla(0, 4%, 16%, 0.7);
+		box-shadow: 0 0 12px 0 hsla(0, 43%, 3%, 0.7);
+	}
+}
+
+input {
+	-webkit-appearance: none;
+	appearance: none;
+	background-clip: border-box;
+	border-radius: 0;
+	padding: 4px 6px;
+	border: none;
+	border-bottom: 2px solid transparent;
+	background-color: transparent;
+	font-size: 12pt;
+	margin-left: 8px;
+	width: 100%;
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-color: transparent;
+
+	#search-lab,
+	#search {
+		display: inline-block;
+		margin: 0;
+	}
+
+	#search-lab {
+		width: 10%;
+		padding: 12px;
+		text-align: right;
+	}
+
+	#search {
+		padding-left: 0;
+		width: 80%;
+		margin-bottom: 12px;
+	}
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu .menu-item {
+	display: inline-block;
+	padding: 12px 0;
+	margin: 4px 0;
+}
+
+.link-group {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-column-gap: 12px;
+	grid-row-gap: 12px;
+	margin: 0 auto;
+	padding: 32px;
+	padding-bottom: 32px;
+	min-height: 82%;
+
+	.link-group-title {
+		text-align: center;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		word-break: keep-all;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		-ms-hyphens: auto;
+		hyphens: auto;
+	}
+
+	.link {
+		padding: 12px;
+		text-align: center;
+		color: #2d2d2d;
+		border-radius: 4px;
+		text-decoration: none;
+		background-clip: padding-box;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+
+		.link-icon {
+			display: block;
+			width: 40px;
+			height: 40px;
+			margin: 12px auto;
+		}
+
+		.link-label {
+			font-size: 16pt;
+		}
+
+		time {
+			display: inline;
+			line-height: 1.4;
+			font-size: 13pt;
+			padding: 0 4px;
+
+			&.current-tz {
+				font-size: 9pt;
+			}
+		}
+
+		date {
+			display: block;
+			padding: 0;
+			line-height: 1.7;
+			font-size: 9pt;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+
+		// assign colors
+		&:nth-child(1),
+		&:nth-child(6n + 1) {
+			background-color: $color1;
+		}
+
+		&:nth-child(2),
+		&:nth-child(6n + 2) {
+			background-color: $color2;
+		}
+
+		&:nth-child(3),
+		&:nth-child(6n + 3) {
+			background-color: $color3;
+		}
+
+		&:nth-child(4),
+		&:nth-child(6n + 4) {
+			background-color: $color4;
+		}
+
+		&:nth-child(5),
+		&:nth-child(6n + 5) {
+			background-color: $color5;
+		}
+
+		&:nth-child(6),
+		&:nth-child(6n + 6) {
+			background-color: $color6;
+		}
+	}
+}
+
+.light-theme {
+	background-color: hsl(0, 0%, 100%);
+
+	.navbar {
+		background-color: white;
+		border-bottom: 1px solid #f1f1f1;
+		box-shadow: 0 2px 6px 0 hsla(0, 4%, 62%, 0.7);
+	}
+
+	#search-lab {
+		color: #2d2d2d;
+	}
+
+	#search {
+		border-bottom-color: #636363;
+
+		&:focus {
+			-webkit-box-shadow: 0 12px 8px -10px hsla(0, 4%, 12%, 0.7);
+			box-shadow: 0 12px 8px -10px hsla(0, 4%, 12%, 0.7);
+		}
+	}
+
+	.link-group-title {
+		color: #2d2d2d;
+	}
+
+	.link:not(.no-hover) {
+		&:hover,
+		&:focus {
+			background-color: #636363;
+			color: white;
+			-webkit-box-shadow: 0 0 12px 0 hsla(0, 4%, 16%, 0.7);
+			box-shadow: 0 0 12px 0 hsla(0, 43%, 3%, 0.7);
+
+			img {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+			}
+		}
+	}
+
+	.footer {
+		background-color: hsl(0, 0%, 95%);
+	}
+}
+
+.dark-theme {
+	background-color: hsl(0, 4%, 12%);
+
+	.navbar {
+		background-color: hsl(0, 4%, 12%);
+		border-bottom: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+
+	.footer {
+		background-color: hsl(0, 4%, 12%);
+		color: white;
+	}
+
+	#search-lab {
+		color: white;
+	}
+
+	#search {
+		border-bottom-color: white;
+		color: white;
+
+		&:focus {
+			border-bottom-color: white;
+			-webkit-box-shadow: 0 12px 8px -10px hsla(0, 4%, 80%, 0.7);
+			box-shadow: 0 12px 8px -10px hsla(0, 4%, 80%, 0.7);
+		}
+	}
+
+	.link-group-title {
+		color: white;
+	}
+
+	.link:not(.no-hover) {
+		&:hover,
+		&:focus {
+			background-color: #636363;
+			color: white;
+			box-shadow: none;
+
+			img {
+				-webkit-filter: invert(1);
+				filter: invert(1);
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 417px) {
+	.link-group {
+		-ms-grid-columns: 48% 48%;
+		grid-template-columns: 48% 48%;
+	}
+}
+
+@media screen and (min-width: 573px) {
+	.link-group {
+		-ms-grid-columns: 31.5% 31.5% 31.5%;
+		grid-template-columns: repeat(3, 31.5%);
+	}
+}
+
+@media screen and (min-width: 816px) {
+	.link-group {
+		-ms-grid-columns: 23.75% 23.75% 23.75% 23.75%;
+		grid-template-columns: repeat(4, 23.75%);
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.link-group {
+		-ms-grid-columns: 19.25% 19.25% 19.25% 19.25% 19.25%;
+		grid-template-columns: repeat(5, 19.25%);
+	}
+}

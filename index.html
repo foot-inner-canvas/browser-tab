@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styles.min.css">
+	<title>startpage</title>
+</head>
+<body class="light-theme">
+	<nav class="navbar">
+		<label for="search" id="search-lab">Search</label>
+		<input type="search" id="search" />
+	</nav>
+	<main>
+		<div class="link-group">
+			<h2 class="link-group-title">Times</h2>
+			<div class="link">
+				<span class="link-icon fal fa-home-heart"></span>
+				<time class="time current-time" id="chi-time"></time>
+				<time class="time current-tz" id="chi-tz"></time>
+				<date class="date" id="chi-date"></date>
+				<label class="link-label">Chicago</label>
+			</div>
+			<div class="link">
+				<span class="link-icon fal fa-city"></span>
+				<time class="time current-time" id="nyc-time"></time>
+				<time class="time current-tz" id="nyc-tz"></time>
+				<date class="date" id="nyc-date"></date>
+				<label class="link-label">New York</label>
+			</div>
+			<div class="link">
+				<span class="link-icon fal fa-landmark"></span>
+				<time class="time current-time" id="ams-time"></time>
+				<time class="time current-tz" id="ams-tz"></time>
+				<date class="date" id="ams-date"></date>
+				<label class="link-label">Amsterdam</label>
+			</div>
+			<div class="link">
+				<span class="link-icon fal fa-crow"></span>
+				<time class="time current-time" id="syd-time"></time>
+				<time class="time current-tz" id="syd-tz"></time>
+				<date class="date" id="syd-date"></date>
+				<label class="link-label">Sydney</label>
+			</div>
+		</div>
+		<div class="link-group">
+			<h2 class="link-group-title">Personal</h2>
+
+			<!-- email -->
+			<a class="link" href="https://gmail.google.com/">
+				<span class="link-icon fal fa-envelope-open"></span>
+				<label class="link-label">gmail</label>
+			</a>
+
+			<!-- calendar -->
+			<a class="link" href="https://calendar.google.com">
+				<span class="link-icon fal fa-calendar-star"></span>
+				<label class="link-label">calendar</label>
+			</a>
+
+			<!-- google maps -->
+			<a class="link" href="https://www.google.com/maps">
+				<span class="link-icon fal fa-route"></span>
+				<label class="link-label">maps</label>
+			</a>
+
+			<!-- weather -->
+			<a class="link" href="https://darksky.net/forecast/52.3724,4.8997/ca12/nl">
+				<span class="link-icon fal fa-sun-cloud"></span>
+				<label class="link-label">weather</label>
+			</a>
+
+			<!-- duolingo -->
+			<a class="link" href="https://www.duolingo.com">
+				<span class="link-icon fal fa-language"></span>
+				<label class="link-label">Duolingo</label>
+			</a>
+
+			<!-- netflix -->
+			<a class="link" href="https://www.netflix.com">
+				<span class="link-icon fal fa-tv"></span>
+				<label class="link-label">netflix</label>
+			</a>
+
+			<!-- twitter -->
+			<a class="link" href="https://twitter.com/">
+				<span class="link-icon fab fa-twitter"></span>
+				<label class="link-label">twitter</label>
+			</a>
+
+			<!-- reddit -->
+			<a class="link" href="https://www.reddit.com/">
+				<span class="link-icon fab fa-reddit"></span>
+				<label class="link-label">reddit</label>
+			</a>
+
+			<!-- soundcloud -->
+			<a class="link" href="https://www.soundcloud.com">
+				<span class="link-icon fab fa-soundcloud"></span>
+				<label class="link-label">soundcloud</label>
+			</a>
+
+			<!-- airbnb -->
+			<a class="link" href="https://www.airbnb.com/">
+				<span class="link-icon fab fa-airbnb"></span>
+				<label class="link-label">Airbnb</label>
+			</a>
+		</div>
+
+		<div class="link-group">
+			<h2 class="link-group-title">Dev</h2>
+			<!-- github -->
+			<a class="link" href="https://github.com/">
+				<span class="link-icon fab fa-github"></span>
+				<label class="link-label">github</label>
+			</a>
+
+			<!-- dev.to -->
+			<a class="link" href="https://dev.to">
+				<span class="link-icon fab fa-dev"></span>
+				<label class="link-label">dev.to</label>
+			</a>
+
+			<!-- jsfiddle -->
+			<a class="link" href="https://jsfiddle.net">
+				<span class="link-icon fab fa-jsfiddle"></span>
+				<label class="link-label">jsfiddle</label>
+			</a>
+
+			<!-- stackoverflow -->
+			<a class="link" href="https://www.stackoverflow.com">
+				<span class="link-icon fab fa-stack-overflow"></span>
+				<label class="link-label">stackoverflow</label>
+			</a>
+
+			<!-- coolors.co/app -->
+			<a class="link" href="https://www.coolors.co/app">
+				<span class="link-icon fal fa-paint-brush"></span>
+				<label class="link-label">Coolors.co</label>
+			</a>
+
+			<!-- https://colorkoala.xyz -->
+			<a class="link" href="https://colorkoala.xyz">
+				<span class="link-icon fal fa-palette"></span>
+				<label class="link-label"">color koala</label>
+			</a>
+
+			<!-- a11y project -->
+			<a class=" link" href="https://www.a11yproject.com">
+					<span class="link-icon fal fa-universal-access"></span>
+					<label class="link-label">a11y project</label>
+			</a>
+
+			<!-- w3 tutorials -->
+			<a class="link" href="https://www.w3.org/WAI/tutorials/">
+				<span class="link-icon fas fa-universal-access"></span>
+				<label class="link-label">w3 tutotrials</label>
+			</a>
+			<!-- fontawesome -->
+			<a class="link" href="https://www.fontawesome.com/icons">
+				<span class="link-icon fab fa-font-awesome-flag"></span>
+				<label class="link-label">FontAwesome</label>
+			</a>
+
+			<!-- undraw -->
+			<a class="link" href="https://undraw.co">
+				<span class="link-icon fal fa-image"></span>
+				<label class="link-label">undraw</label>
+			</a>
+
+		</div>
+	</main>
+	<footer class="footer">
+		<h2>Settings</h2>
+		<ul class="menu">
+			<li class="menu-item button-item">
+				<p>Toggle between light and dark mode</p>
+				<button id="themeToggle" class="primary" title="change theme">
+					<span class="link-icon fal fa-sun"></span>
+					Toggle Theme
+				</button>
+			</li>
+		</ul>
+	</footer>
+	<!-- insert link to local copy of fontawesome here -->
+	<script type="text/javascript" src="js/index.min.js"></script>
+</body>
+</html>
